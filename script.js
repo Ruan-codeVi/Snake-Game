@@ -6,6 +6,7 @@ snake[0] = {
     x: 8 * box,
     y: 8 * box
 }
+let direction = "right";
 
 function creatBG(){
     context.fillStyle = "black";
@@ -19,6 +20,25 @@ function creatSnake(){
 
     }
 }
-creatBG();
-creatSnake();
+function playGame(){
+    creatBG();
+    creatSnake();
+    // Eixos
+    let snakeX = snake[0].x;
+    let snakeY = snake[0].y;
+    // Direções
+    if(direction == "right") snakeX += box;
+    if(direction == "left") snakeX -= box;
+    if(direction == "up") snakeY -= box;
+    if(direction == "down") snakeY += box;
 
+    //retirando uma box(Quadrado)
+    snake.pop();
+
+    // adicionado box a cabeça
+    let newHead ={
+        x:snakeX,
+        y: snakeY
+    }
+}
+let game = setInterval(playGame, 100)
