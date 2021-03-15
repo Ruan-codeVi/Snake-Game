@@ -1,4 +1,16 @@
-*{
-    padding: 0;
-    margin: 0;
+
+body{
+    height: 95vh;
+    width: 95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    color: rgba(18, 102, 36, 0.76);
+}
+footer{
+    color: black;
+    font-size: 18px;
+    padding-top: 10px;
 }
