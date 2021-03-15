@@ -45,6 +45,13 @@ function playGame(){
     if(snake[0].x < 0 && direction == "left") snake[0].x = 20 * box;
     if(snake[0].y > 19 * box && direction == "down") snake[0].y = 0;
     if(snake[0].y < 0 && direction == "up") snake[0].y = 20 * box;
+    // Criando a parte da colisão
+    for(let i = 1; i < snake.length; i++){
+        if(snake[0].x == snake[i].x && snake[0].y == snake[i].y){
+            clearInterval(game)
+            alert("GAMER OVER, Aperte F5 para recomeçar")
+        }
+    }
     creatBG();
     creatSnake();
     drawFood();
