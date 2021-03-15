@@ -20,7 +20,21 @@ function creatSnake(){
 
     }
 }
+// Criando um EventListener 
+document.addEventListener("keydown", update)
+// função que recebe as teclas, processa e seta as direções do teclado
+function update(event){
+    if(event.keyCode == 37 && direction !="right") direction= "left";
+    if(event.keyCode == 38 && direction !="down") direction="up";
+    if(event.keyCode == 39 && direction !="left") direction="right";
+    if(event.keyCode == 40 && direction !="up") direction="down"
+}
 function playGame(){
+    // movimentação através das paredes
+    if(snake[0].x > 19 * box && direction == "right") snake[0].x = 0;
+    if(snake[0].x < 0 && direction == "left") snake[0].x = 20 * box;
+    if(snake[0].y > 19 * box && direction == "down") snake[0].y = 0;
+    if(snake[0].y < 0 && direction == "up") snake[0].y = 20 * box;
     creatBG();
     creatSnake();
     // Eixos
@@ -35,10 +49,12 @@ function playGame(){
     //retirando uma box(Quadrado)
     snake.pop();
 
-    // adicionado box a cabeça
+    // criando a cabeça
     let newHead ={
-        x:snakeX,
+        x: snakeX,
         y: snakeY
     }
+    snake.unshift(newHead);
 }
+
 let game = setInterval(playGame, 100)
