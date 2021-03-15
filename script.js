@@ -7,6 +7,11 @@ snake[0] = {
     y: 8 * box
 }
 let direction = "right";
+// Criando a var da comida
+let food = {
+    x: Math.floor(Math.random() * 15 + 1) * box,
+    y: Math.floor(Math.random() * 15 + 1) * box
+}
 
 function creatBG(){
     context.fillStyle = "black";
@@ -19,6 +24,11 @@ function creatSnake(){
         context.fillRect(snake[i].x, snake[i].y, box, box)
 
     }
+}
+// função que desenha a comida no canvas
+function drawFood(){
+    context.fillStyle = "red";
+    context.fillRect(food.x, food.y, box, box);
 }
 // Criando um EventListener 
 document.addEventListener("keydown", update)
@@ -37,6 +47,7 @@ function playGame(){
     if(snake[0].y < 0 && direction == "up") snake[0].y = 20 * box;
     creatBG();
     creatSnake();
+    drawFood();
     // Eixos
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;
