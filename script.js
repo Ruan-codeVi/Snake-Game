@@ -57,8 +57,15 @@ function playGame(){
     if(direction == "up") snakeY -= box;
     if(direction == "down") snakeY += box;
 
-    //retirando uma box(Quadrado)
-    snake.pop();
+    // Snake comendo
+    if(snakeX !=food.x || snakeY != food.y){
+        //retirando uma box(Quadrado)
+        snake.pop();
+    }else{
+      food.x = Math.floor(Math.random() * 15 + 1) * box
+      food.y = Math.floor(Math.random() * 15 + 1) * box 
+    }
+    
 
     // criando a cabeça
     let newHead ={
