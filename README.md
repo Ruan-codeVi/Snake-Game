@@ -2,3 +2,5 @@
 ##  Description
 # Snake-Game
 Basic FrontEnd
+
+##  Purpose of the project
