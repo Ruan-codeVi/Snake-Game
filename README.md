@@ -1,8 +1,10 @@
-![GitHub language count](https://img.shields.io/github/languages/count/Ruan-codeVi/Clone-Netflix?color=green&style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/Ruan-codeVi/Clone-Netflix?color=green&style=for-the-badge)
 <div align="center"> 
+ 
+![GitHub language count](https://img.shields.io/github/languages/count/Ruan-codeVi/Clone-Netflix?color=green&style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/Ruan-codeVi/Clone-Netflix?color=green&style=for-the-badge)
+
 
 # Snake-Game
-![Screen](/assets/snakeGame.gif)</div> </br> 
+![Screen](/assets/snakeGame.gif)
  
  
 ##  Description
@@ -16,3 +18,5 @@ Basic FrontEnd
 - Axis manipulation
 - Creating functions for keyboard input
 - Create well-defined rules through code
+
+</div> </br> 
