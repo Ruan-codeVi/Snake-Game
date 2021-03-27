@@ -6,3 +6,7 @@ Basic FrontEnd
 ##  Purpose of the project
 - Use the Dom through the canvas tag to create the graphic part
 - Principles of CSS3
+- 2d environment creation
+- Axis manipulation
+- Creating functions for keyboard input
+- Create well-defined rules through code
