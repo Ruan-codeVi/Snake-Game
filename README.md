@@ -12,7 +12,7 @@
 Basic FrontEnd
 
 ##  Purpose of the project
- Use the Dom through the canvas tag to create the graphic part </br> 
+ Use the Dom through the canvas tag to create the graphic part. </br> 
  Principles of CSS3 </br> 
  2d environment creation </br> 
  Axis manipulation </br> 
