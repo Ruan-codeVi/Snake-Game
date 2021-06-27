@@ -16,7 +16,7 @@ Basic FrontEnd
  Principles of CSS3. </br> 
  2d environment creation. </br> 
  Axis manipulation. </br> 
- Creating functions for keyboard input </br> 
+ Creating functions for keyboard input. </br> 
  Create well-defined rules through code </br> 
 
 </div> </br> 
